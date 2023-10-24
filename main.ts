@@ -5,9 +5,11 @@
  * This program generates two random integers between 0 - 99 and displays whether one is greater than the other.
 */
 
+// variables
 let firstRandomNumber: number = 0
 let secondRandomNumber: number = 0
 
+// cleanup
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
