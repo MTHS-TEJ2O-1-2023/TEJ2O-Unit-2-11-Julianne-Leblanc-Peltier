@@ -16,7 +16,6 @@ input.onButtonPressed(Button.A, function () {
   // process
   firstRandomNumber = randint(0, 99)
   basic.clearScreen()
-  
   // output
   basic.showString('#1:')
   basic.showNumber(firstRandomNumber)
