@@ -35,16 +35,17 @@ while True:
         display.scroll("#2:")
         display.scroll(str(second_random_number))
         display.show(Image.HAPPY)
+
+    # if MicroBit was shaken, display which number is greater than the other
     if accelerometer.was_gesture("shake"):
         # process
         display.clear()
-
-        if first_random_number > second_random_number():
+        # if first number is greater than second number, display "first number > second number" else, display "first number < second number"
+        if first_random_number > second_random_number:
             display.scroll(str(first_random_number))
             display.scroll(">")
             display.scroll(str(second_random_number))
             display.show(Image.SAD)
-
         else:
             display.scroll(str(first_random_number))
             display.scroll("<")
